@@ -1,34 +1,33 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "1.0.0",
+  "id": "addendum",
+  "version": "1.16.4-1.0.0",
 
-  "name": "Fabric Example Mod",
-  "description": "StevenPlayzz's Fabric Example Mod!",
+  "name": "Addendum",
+  "description": "Adding new blocks to fit your ender palette!",
   "authors": [
-    "FabricMC team",
-    "Draylar",
-    "StevePlayzz"
+    "Eltrut & Co."
   ],
   "contact": {
-    "homepage": "https://github.com/StevePlayzz",
-    "sources": "https://github.com/StevePlayzz/Fabric-Example-Mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/addendum-fabric",
+    "sources": "https://github.com/Eltrut-Co/Addendum",
+    "issues": "https://github.com/Eltrut-Co/Addendum/issues"
   },
 
-  "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "license": "LGPLv2.1",
+  "icon": "assets/addendum/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.github.steveplayzz.modid.ExampleMod"
+      "com.github.EltrutCo.addendum.Addendum"
     ],
     "client": [
-      "com.github.steveplayzz.modid.ExampleModClient"
+      "com.github.EltrutCo.addendum.AddendumClient"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "addendum.mixins.json"
   ],
 
   "depends": {
