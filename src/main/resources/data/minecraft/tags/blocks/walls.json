@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "addendum:end_stone_wall",
+	"addendum:polished_end_stone_wall",
+	"addendum:purpur_brick_wall",
+	"addendum:midori_brick_wall"
+  ]
+}

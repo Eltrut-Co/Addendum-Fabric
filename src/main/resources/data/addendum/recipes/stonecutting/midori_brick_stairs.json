@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+	{
+	  "item": "quark:midori_block"
+	},
+	{
+	  "item": "addendum:midori_bricks"
+	}
+  ],
+  "result": "addendum:midori_brick_stairs",
+  "count": 1,
+  "conditions": [
+    {
+      "type": "abnormals_core:quark_flag",
+      "flag": "midori"
+    }
+  ]
+}
