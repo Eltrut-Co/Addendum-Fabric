@@ -11,7 +11,7 @@
       "item": "addendum:shulker_block"
     },
     "X": {
-      "tag": "forge:dyes/gray"
+      "item": "minecraft:gray_dye"
     }
   },
   "result": {
