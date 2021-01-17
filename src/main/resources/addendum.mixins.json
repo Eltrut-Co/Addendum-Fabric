@@ -3,7 +3,6 @@
   "package": "com.github.EltrutCo.addendum.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-
   ],
   "injectors": {
     "defaultRequire": 1
