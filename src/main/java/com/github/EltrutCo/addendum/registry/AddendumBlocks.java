@@ -1,35 +1,38 @@
 package com.github.EltrutCo.addendum.registry;
 
 import com.github.EltrutCo.addendum.Addendum;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.minecraft.block.*;
+import com.github.steveplayzz.oreocore.common.blocks.OreoCoreStairsBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import com.github.steveplayzz.oreocore.common.blocks.OreoCoreStairsBlock;
+
+import static net.minecraft.block.AbstractBlock.Settings.copy;
 
 public class AddendumBlocks {
 
     // End Stone
-    public static final SlabBlock END_STONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final OreoCoreStairsBlock END_STONE_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final WallBlock END_STONE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.END_STONE));
+    public static final SlabBlock END_STONE_SLAB = new SlabBlock(copy(Blocks.END_STONE));
+    public static final OreoCoreStairsBlock END_STONE_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), copy(Blocks.END_STONE));
+    public static final WallBlock END_STONE_WALL = new WallBlock(copy(Blocks.END_STONE));
 
-    public static final Block POLISHED_END_STONE = new Block(FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final SlabBlock POLISHED_END_STONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final OreoCoreStairsBlock POLISHED_END_STONE_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final WallBlock POLISHED_END_STONE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.END_STONE));
+    public static final Block POLISHED_END_STONE = new Block(copy(Blocks.END_STONE));
+    public static final SlabBlock POLISHED_END_STONE_SLAB = new SlabBlock(copy(Blocks.END_STONE));
+    public static final OreoCoreStairsBlock POLISHED_END_STONE_STAIRS = new OreoCoreStairsBlock(copy(Blocks.END_STONE));
+    public static final WallBlock POLISHED_END_STONE_WALL = new WallBlock(copy(Blocks.END_STONE));
 
-    public static final Block CHORUSY_END_STONE_BRICKS = new Block(FabricBlockSettings.copy(Blocks.END_STONE_BRICKS));
+    public static final Block CHORUSY_END_STONE_BRICKS = new Block(copy(Blocks.END_STONE_BRICKS));
 
     // Purpur
-    public static final Block PURPUR_BRICKS = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
-    public static final SlabBlock PURPUR_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
-    public static final OreoCoreStairsBlock PURPUR_BRICK_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
-    public static final WallBlock PURPUR_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
+    public static final Block PURPUR_BRICKS = new Block(copy(Blocks.PURPUR_BLOCK));
+    public static final SlabBlock PURPUR_BRICK_SLAB = new SlabBlock(copy(Blocks.PURPUR_BLOCK));
+    public static final OreoCoreStairsBlock PURPUR_BRICK_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), copy(Blocks.PURPUR_BLOCK));
+    public static final WallBlock PURPUR_BRICK_WALL = new WallBlock(copy(Blocks.PURPUR_BLOCK));
 
-    public static final Block CHISELED_PURPUR_BRICKS = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
-    public static final Block POPPED_CHORUS_FRUIT_BLOCK = new Block(FabricBlockSettings.copy(Blocks.MAGENTA_WOOL));
+    public static final Block CHISELED_PURPUR_BRICKS = new Block(copy(Blocks.PURPUR_BLOCK));
+    public static final Block POPPED_CHORUS_FRUIT_BLOCK = new Block(copy(Blocks.MAGENTA_WOOL));
 
     // Midori (When Quark Fabric comes out lol)
     // later lol..
@@ -38,41 +41,41 @@ public class AddendumBlocks {
     //UHHH no :sadcat:
 
     // Shulker
-    public static final Block SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.SHULKER_BOX));
-    public static final Block SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.SHULKER_BOX));
+    public static final Block SHULKER_BLOCK = new Block(copy(Blocks.SHULKER_BOX));
+    public static final Block SHULKER_SWIRL = new Block(copy(Blocks.SHULKER_BOX));
 
-    public static final Block WHITE_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.WHITE_SHULKER_BOX));
-    public static final Block WHITE_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.WHITE_SHULKER_BOX));
-    public static final Block ORANGE_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.ORANGE_SHULKER_BOX));
-    public static final Block ORANGE_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.ORANGE_SHULKER_BOX));
-    public static final Block MAGENTA_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.MAGENTA_SHULKER_BOX));
-    public static final Block MAGENTA_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.MAGENTA_SHULKER_BOX));
-    public static final Block LIGHT_BLUE_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.LIGHT_BLUE_SHULKER_BOX));
-    public static final Block LIGHT_BLUE_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.LIGHT_BLUE_SHULKER_BOX));
-    public static final Block YELLOW_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.YELLOW_SHULKER_BOX));
-    public static final Block YELLOW_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.YELLOW_SHULKER_BOX));
-    public static final Block LIME_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.LIME_SHULKER_BOX));
-    public static final Block LIME_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.LIME_SHULKER_BOX));
-    public static final Block PINK_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.PINK_SHULKER_BOX));
-    public static final Block PINK_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.PINK_SHULKER_BOX));
-    public static final Block GRAY_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.GRAY_SHULKER_BOX));
-    public static final Block GRAY_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.GRAY_SHULKER_BOX));
-    public static final Block LIGHT_GRAY_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.LIGHT_GRAY_SHULKER_BOX));
-    public static final Block LIGHT_GRAY_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.LIGHT_GRAY_SHULKER_BOX));
-    public static final Block CYAN_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.CYAN_SHULKER_BOX));
-    public static final Block CYAN_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.CYAN_SHULKER_BOX));
-    public static final Block PURPLE_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.PURPLE_SHULKER_BOX));
-    public static final Block PURPLE_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.PURPLE_SHULKER_BOX));
-    public static final Block BLUE_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.BLUE_SHULKER_BOX));
-    public static final Block BLUE_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.BLUE_SHULKER_BOX));
-    public static final Block BROWN_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.BROWN_SHULKER_BOX));
-    public static final Block BROWN_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.BROWN_SHULKER_BOX));
-    public static final Block GREEN_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.GREEN_SHULKER_BOX));
-    public static final Block GREEN_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.GREEN_SHULKER_BOX));
-    public static final Block RED_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.RED_SHULKER_BOX));
-    public static final Block RED_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.RED_SHULKER_BOX));
-    public static final Block BLACK_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.BLACK_SHULKER_BOX));
-    public static final Block BLACK_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.BLACK_SHULKER_BOX));
+    public static final Block WHITE_SHULKER_BLOCK = new Block(copy(Blocks.WHITE_SHULKER_BOX));
+    public static final Block WHITE_SHULKER_SWIRL = new Block(copy(Blocks.WHITE_SHULKER_BOX));
+    public static final Block ORANGE_SHULKER_BLOCK = new Block(copy(Blocks.ORANGE_SHULKER_BOX));
+    public static final Block ORANGE_SHULKER_SWIRL = new Block(copy(Blocks.ORANGE_SHULKER_BOX));
+    public static final Block MAGENTA_SHULKER_BLOCK = new Block(copy(Blocks.MAGENTA_SHULKER_BOX));
+    public static final Block MAGENTA_SHULKER_SWIRL = new Block(copy(Blocks.MAGENTA_SHULKER_BOX));
+    public static final Block LIGHT_BLUE_SHULKER_BLOCK = new Block(copy(Blocks.LIGHT_BLUE_SHULKER_BOX));
+    public static final Block LIGHT_BLUE_SHULKER_SWIRL = new Block(copy(Blocks.LIGHT_BLUE_SHULKER_BOX));
+    public static final Block YELLOW_SHULKER_BLOCK = new Block(copy(Blocks.YELLOW_SHULKER_BOX));
+    public static final Block YELLOW_SHULKER_SWIRL = new Block(copy(Blocks.YELLOW_SHULKER_BOX));
+    public static final Block LIME_SHULKER_BLOCK = new Block(copy(Blocks.LIME_SHULKER_BOX));
+    public static final Block LIME_SHULKER_SWIRL = new Block(copy(Blocks.LIME_SHULKER_BOX));
+    public static final Block PINK_SHULKER_BLOCK = new Block(copy(Blocks.PINK_SHULKER_BOX));
+    public static final Block PINK_SHULKER_SWIRL = new Block(copy(Blocks.PINK_SHULKER_BOX));
+    public static final Block GRAY_SHULKER_BLOCK = new Block(copy(Blocks.GRAY_SHULKER_BOX));
+    public static final Block GRAY_SHULKER_SWIRL = new Block(copy(Blocks.GRAY_SHULKER_BOX));
+    public static final Block LIGHT_GRAY_SHULKER_BLOCK = new Block(copy(Blocks.LIGHT_GRAY_SHULKER_BOX));
+    public static final Block LIGHT_GRAY_SHULKER_SWIRL = new Block(copy(Blocks.LIGHT_GRAY_SHULKER_BOX));
+    public static final Block CYAN_SHULKER_BLOCK = new Block(copy(Blocks.CYAN_SHULKER_BOX));
+    public static final Block CYAN_SHULKER_SWIRL = new Block(copy(Blocks.CYAN_SHULKER_BOX));
+    public static final Block PURPLE_SHULKER_BLOCK = new Block(copy(Blocks.PURPLE_SHULKER_BOX));
+    public static final Block PURPLE_SHULKER_SWIRL = new Block(copy(Blocks.PURPLE_SHULKER_BOX));
+    public static final Block BLUE_SHULKER_BLOCK = new Block(copy(Blocks.BLUE_SHULKER_BOX));
+    public static final Block BLUE_SHULKER_SWIRL = new Block(copy(Blocks.BLUE_SHULKER_BOX));
+    public static final Block BROWN_SHULKER_BLOCK = new Block(copy(Blocks.BROWN_SHULKER_BOX));
+    public static final Block BROWN_SHULKER_SWIRL = new Block(copy(Blocks.BROWN_SHULKER_BOX));
+    public static final Block GREEN_SHULKER_BLOCK = new Block(copy(Blocks.GREEN_SHULKER_BOX));
+    public static final Block GREEN_SHULKER_SWIRL = new Block(copy(Blocks.GREEN_SHULKER_BOX));
+    public static final Block RED_SHULKER_BLOCK = new Block(copy(Blocks.RED_SHULKER_BOX));
+    public static final Block RED_SHULKER_SWIRL = new Block(copy(Blocks.RED_SHULKER_BOX));
+    public static final Block BLACK_SHULKER_BLOCK = new Block(copy(Blocks.BLACK_SHULKER_BOX));
+    public static final Block BLACK_SHULKER_SWIRL = new Block(copy(Blocks.BLACK_SHULKER_BOX));
 
     public static void RegisterAddendumBlocks() {
 
@@ -136,14 +139,4 @@ public class AddendumBlocks {
 
     }
 
-    public static class Properties {
-        public static final FabricBlockSettings MIDORI = FabricBlockSettings.of(Material.STONE)
-                .materialColor(MaterialColor.LIME)
-                .requiresTool()
-                .breakByHand(false)
-                .breakByTool(FabricToolTags.PICKAXES)
-                .hardness(1.5f)
-                .resistance(6.0f);
-
-    }
 }
