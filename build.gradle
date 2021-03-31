@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.5-SNAPSHOT'
+	id 'fabric-loom' version '0.6-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -23,14 +23,21 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// dev modmenu and config related mods
-	modImplementation "io.github.prospector:modmenu:${project.mod_menu_version}"
-	modImplementation "me.shedaniel.cloth:config-2:${project.cloth_config_version}"
-	modImplementation "me.sargunvohra.mcmods:autoconfig1u:${project.auto_config_version}"
-	//implementation 'com.github.Evoslab:Oreo-Core-Fabric:beta-1.0.4'
+	//ARRP
+	modImplementation group: 'net.devtech', name: 'arrp', version: '0.3.9'
+	//Cookie Core
+	modImplementation group: 'com.github.evoslab', name: 'cookiecore', version: '0.0.4'
+}
 
-	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
-	// You may need to force-disable transitiveness on them.
+repositories {
+	//ARRP Maven
+	maven {
+		url = 'https://raw.githubusercontent.com/Devan-Kerman/Devan-Repo/master/'
+	}
+	//Cookie Core Maven
+	maven {
+		url = 'https://raw.githubusercontent.com/Evoslab/Evoslab-Maven-Repo/master/'
+	}
 }
 
 processResources {

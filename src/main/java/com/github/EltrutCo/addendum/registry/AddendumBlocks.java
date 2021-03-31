@@ -1,11 +1,12 @@
 package com.github.EltrutCo.addendum.registry;
 
 import com.github.EltrutCo.addendum.Addendum;
-//import com.github.evoslab.oreocore.common.blocks.OreoCoreStairsBlock;
-import com.github.EltrutCo.addendum.block.OreoCoreStairsBlock;
+import com.github.evoslab.cookiecore.blocks.main.CookieCoreStairsBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.mixin.object.builder.AbstractBlockSettingsMixin;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SlabBlock;
+import net.minecraft.block.WallBlock;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -13,12 +14,12 @@ public class AddendumBlocks {
 
     // End Stone
     public static final SlabBlock END_STONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final OreoCoreStairsBlock END_STONE_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.END_STONE));
+    public static final CookieCoreStairsBlock END_STONE_STAIRS = new CookieCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.END_STONE));
     public static final WallBlock END_STONE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.END_STONE));
 
     public static final Block POLISHED_END_STONE = new Block(FabricBlockSettings.copy(Blocks.END_STONE));
     public static final SlabBlock POLISHED_END_STONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final OreoCoreStairsBlock POLISHED_END_STONE_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(),FabricBlockSettings.copy(Blocks.END_STONE));
+    public static final CookieCoreStairsBlock POLISHED_END_STONE_STAIRS = new CookieCoreStairsBlock(Blocks.END_STONE.getDefaultState(),FabricBlockSettings.copy(Blocks.END_STONE));
 
     public static final WallBlock POLISHED_END_STONE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.END_STONE));
 
@@ -27,7 +28,7 @@ public class AddendumBlocks {
     // Purpur
     public static final Block PURPUR_BRICKS = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
     public static final SlabBlock PURPUR_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
-    public static final OreoCoreStairsBlock PURPUR_BRICK_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
+    public static final CookieCoreStairsBlock PURPUR_BRICK_STAIRS = new CookieCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
     public static final WallBlock PURPUR_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
 
     public static final Block CHISELED_PURPUR_BRICKS = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
