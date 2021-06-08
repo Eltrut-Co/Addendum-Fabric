@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "addendum",
-  "version": "1.16.5-1.0.1",
+  "version": "1.17-1.0.1",
 
   "name": "Addendum",
   "description": "Adding new blocks to fit your ender palette!",
@@ -22,18 +22,18 @@
     "main": [
       "com.github.EltrutCo.addendum.Addendum"
     ],
-    "client": [
-      "com.github.EltrutCo.addendum.AddendumClient"
-    ]
+    "client": []
   },
   "mixins": [
     "addendum.mixins.json"
   ],
+  "accessWidener" : "addendum.accesswidener",
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.17.x",
+    "java": ">=16"
   },
   "suggests": {
     "flamingo": "*"

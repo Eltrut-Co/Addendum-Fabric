@@ -8,7 +8,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class AddendumItems {
-
     // End Stone
     public static final Item END_STONE_SLAB_ITEM = new BlockItem(AddendumBlocks.END_STONE_SLAB, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
     public static final Item END_STONE_STAIRS_ITEM = new BlockItem(AddendumBlocks.END_STONE_STAIRS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
@@ -29,12 +28,6 @@ public class AddendumItems {
 
     public static final Item CHISELED_PURPUR_BRICKS_ITEM = new BlockItem(AddendumBlocks.CHISELED_PURPUR_BRICKS, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
     public static final Item POPPED_CHORUS_FRUIT_BLOCK_ITEM = new BlockItem(AddendumBlocks.POPPED_CHORUS_FRUIT_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS));
-
-    // Midori (When Quark Fabric comes out lol)
-    // later lol..
-
-    // Himmel
-    //UHHH no :sadcat:
 
     // Shulker
     public static final Item SHULKER_BLOCK_ITEM = new BlockItem(AddendumBlocks.SHULKER_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS));
@@ -73,8 +66,7 @@ public class AddendumItems {
     public static final Item BLACK_SHULKER_BLOCK_ITEM = new BlockItem(AddendumBlocks.BLACK_SHULKER_BLOCK, new Item.Settings().group(ItemGroup.DECORATIONS));
     public static final Item BLACK_SHULKER_SWIRL_ITEM = new BlockItem(AddendumBlocks.BLACK_SHULKER_SWIRL, new Item.Settings().group(ItemGroup.DECORATIONS));
 
-    public static void RegisterAddendumItems() {
-
+    public static void init() {
         // End Stone
         Registry.register(Registry.ITEM, new Identifier(Addendum.MODID, "end_stone_slab"), END_STONE_SLAB_ITEM);
         Registry.register(Registry.ITEM, new Identifier(Addendum.MODID, "end_stone_stairs"), END_STONE_STAIRS_ITEM);
@@ -95,12 +87,6 @@ public class AddendumItems {
 
         Registry.register(Registry.ITEM, new Identifier(Addendum.MODID, "chiseled_purpur_bricks"), CHISELED_PURPUR_BRICKS_ITEM);
         Registry.register(Registry.ITEM, new Identifier(Addendum.MODID, "popped_chorus_fruit_block"), POPPED_CHORUS_FRUIT_BLOCK_ITEM);
-
-        // Midori (When Quark Fabric comes out lol)
-        // later lol..
-
-        // Himmel
-        //UHHH no :sadcat:
 
         //Shulker
         Registry.register(Registry.ITEM, new Identifier(Addendum.MODID, "shulker_block"), SHULKER_BLOCK_ITEM);
@@ -138,6 +124,5 @@ public class AddendumItems {
         Registry.register(Registry.ITEM, new Identifier(Addendum.MODID, "red_shulker_swirl"), RED_SHULKER_SWIRL_ITEM);
         Registry.register(Registry.ITEM, new Identifier(Addendum.MODID, "black_shulker_block"), BLACK_SHULKER_BLOCK_ITEM);
         Registry.register(Registry.ITEM, new Identifier(Addendum.MODID, "black_shulker_swirl"), BLACK_SHULKER_SWIRL_ITEM);
-
     }
 }

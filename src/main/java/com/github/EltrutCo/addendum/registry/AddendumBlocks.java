@@ -1,24 +1,20 @@
 package com.github.EltrutCo.addendum.registry;
 
 import com.github.EltrutCo.addendum.Addendum;
-//import com.github.evoslab.oreocore.common.blocks.OreoCoreStairsBlock;
-import com.github.EltrutCo.addendum.block.OreoCoreStairsBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.mixin.object.builder.AbstractBlockSettingsMixin;
 import net.minecraft.block.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class AddendumBlocks {
-
     // End Stone
     public static final SlabBlock END_STONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final OreoCoreStairsBlock END_STONE_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.END_STONE));
+    public static final StairsBlock END_STONE_STAIRS = new StairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.END_STONE));
     public static final WallBlock END_STONE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.END_STONE));
 
     public static final Block POLISHED_END_STONE = new Block(FabricBlockSettings.copy(Blocks.END_STONE));
     public static final SlabBlock POLISHED_END_STONE_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.END_STONE));
-    public static final OreoCoreStairsBlock POLISHED_END_STONE_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(),FabricBlockSettings.copy(Blocks.END_STONE));
+    public static final StairsBlock POLISHED_END_STONE_STAIRS = new StairsBlock(Blocks.END_STONE.getDefaultState(),FabricBlockSettings.copy(Blocks.END_STONE));
 
     public static final WallBlock POLISHED_END_STONE_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.END_STONE));
 
@@ -27,17 +23,11 @@ public class AddendumBlocks {
     // Purpur
     public static final Block PURPUR_BRICKS = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
     public static final SlabBlock PURPUR_BRICK_SLAB = new SlabBlock(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
-    public static final OreoCoreStairsBlock PURPUR_BRICK_STAIRS = new OreoCoreStairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
+    public static final StairsBlock PURPUR_BRICK_STAIRS = new StairsBlock(Blocks.END_STONE.getDefaultState(), FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
     public static final WallBlock PURPUR_BRICK_WALL = new WallBlock(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
 
     public static final Block CHISELED_PURPUR_BRICKS = new Block(FabricBlockSettings.copy(Blocks.PURPUR_BLOCK));
     public static final Block POPPED_CHORUS_FRUIT_BLOCK = new Block(FabricBlockSettings.copy(Blocks.MAGENTA_WOOL));
-
-    // Midori (When Quark Fabric comes out lol)
-    // later lol..
-
-    // Himmel
-    //UHHH no :sadcat:
 
     // Shulker
     public static final Block SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.SHULKER_BOX));
@@ -76,8 +66,7 @@ public class AddendumBlocks {
     public static final Block BLACK_SHULKER_BLOCK = new Block(FabricBlockSettings.copy(Blocks.BLACK_SHULKER_BOX));
     public static final Block BLACK_SHULKER_SWIRL = new Block(FabricBlockSettings.copy(Blocks.BLACK_SHULKER_BOX));
 
-    public static void RegisterAddendumBlocks() {
-
+    public static void init() {
         // End Stone
         Registry.register(Registry.BLOCK, new Identifier(Addendum.MODID, "end_stone_slab"), END_STONE_SLAB);
         Registry.register(Registry.BLOCK, new Identifier(Addendum.MODID, "end_stone_stairs"), END_STONE_STAIRS);
@@ -135,7 +124,5 @@ public class AddendumBlocks {
         Registry.register(Registry.BLOCK, new Identifier(Addendum.MODID, "red_shulker_swirl"), RED_SHULKER_SWIRL);
         Registry.register(Registry.BLOCK, new Identifier(Addendum.MODID, "black_shulker_block"), BLACK_SHULKER_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier(Addendum.MODID, "black_shulker_swirl"), BLACK_SHULKER_SWIRL);
-
     }
-
 }
