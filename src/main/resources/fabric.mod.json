@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "addendum",
-  "version": "1.17-1.0.1",
+  "version": "${version}",
 
   "name": "Addendum",
   "description": "Adding new blocks to fit your ender palette!",
