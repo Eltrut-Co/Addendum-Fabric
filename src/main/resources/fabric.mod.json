@@ -10,8 +10,8 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/addendum-fabric",
-    "sources": "https://github.com/Eltrut-Co/Addendum",
-    "issues": "https://github.com/Eltrut-Co/Addendum/issues"
+    "sources": "https://github.com/Eltrut-Co/Addendum-Fabric",
+    "issues": "https://github.com/Eltrut-Co/Addendum-Fabric/issues"
   },
 
   "license": "LGPLv2.1",
